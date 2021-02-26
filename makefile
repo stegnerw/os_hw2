@@ -2,14 +2,11 @@
 # Author		: Wayne Stegner <wayne.stegner@protonmail.com>
 
 # Project Name
-PROJECT = compiler
+PROJECT = os_hw2
 
 # Directory Definitions
 # src/	- Source code directory
-# obj/	- Compiled object directory
 # bin/	- Compiled executable directory
-# test/	- Test case directory
-# log/	- Test log directory
 SRC_DIR		= ./src
 BIN_DIR		= ./bin
 

@@ -23,10 +23,10 @@ CFLAGS 		= -g -Wall
 all: $(BIN_DIR)/cigarette_smokers $(BIN_DIR)/sleeping_barber
 
 $(BIN_DIR)/cigarette_smokers: $(SRC_DIR)/cigarette_smokers.cpp | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ -lpthread -lrt
 
 $(BIN_DIR)/sleeping_barber: $(SRC_DIR)/sleeping_barber.cpp | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ -lpthread -lrt
 
 $(BIN_DIR):
 	mkdir -p $@

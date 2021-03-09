@@ -40,6 +40,12 @@ int main() {
 	srand(seed);
 	ss << "Begin cigarette smokers program.";
 	log(ss);
+
+	// Initialize semaphores
+	sem_init(&agent_sem, 0, 0);
+	sem_init(&paper_smoker_sem, 0, 0);
+	sem_init(&tobacco_smoker_sem, 0, 0);
+	sem_init(&matches_smoker_sem, 0, 0);
 	
 	// Spawn new threads
 	std::thread tobacco_thread(tobacco_smoker);
